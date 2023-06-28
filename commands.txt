@@ -1,0 +1,129 @@
+Working : 
+linux file structure : 
+source 1. https://cvw.cac.cornell.edu/linux/filesystem
+source 2. https://youtu.be/42iQKuQodW4
+
+clear
+pwd
+
+echo "hello"
+echo $0
+echo $PATH
+
+
+.	current dir
+..	parent dir
+~	home dir
+>	redirect/write
+>>	append
+
+
+
+start .	open in file explorer
+
+ls .
+ls
+
+touch file1.txt
+echo "hello" > file1.txt
+cd
+
+ls ~
+ls -a
+
+cat
+head
+tail
+
+ls -lh
+ls -la
+
+
+
+wc file1.txt
+ls | wc -l
+ls | wc -w
+ls | wc -c
+cat commands.txt | grep "java"
+cat $(ls | grep "uniqueName")
+
+|
+
+touch ~/.bashrc
+nano ~/.bashrc
+alias ll='ls -lah'
+
+which 
+where
+
+stat
+stat $(ls | grep ".java")
+
+cp file1.txt file2.txt
+
+mkdir
+
+df
+df -h
+df -h --total
+
+mount
+mount | column -t
+
+rm
+rmdir vs rm -rf
+
+
+ls /proc
+cat /proc/cpuinfo
+cat /proc/version
+
+start file-name
+wc -w (line,word, char -byte)
+grep
+grep -r "word" .
+grep -r "word" /dir1/dir2/
+grep -Ril "e" .  (R - first check current dir, then recursive, i - ignore case,l - files with matched words)
+grep -rl "java.util" .	 
+grep "java.util" Run.java
+
+
+ls /etc/
+ls /proc/
+
+mv
+rm file1.txt file2.txt
+date
+ping google.com
+ping 10.0.61.49 (someones ipv4)
+whoami
+uname -a (all)
+uname -s (kernel name)
+uname -n (network node NB16XX)
+
+hostname  ( hostname.domainname.com)
+
+curl localhost:3000
+
+chmod 764 filename ( 4 - read, 2 - write, 1 - execute)
+
+history
+history 10 | grep "grep"
+shutdown -r
+shutdown -a
+
+tar
+tar -cvf test.tar file1.txt file2.txt
+tar -czvf test.tar file1.txt file2.txt
+tar -tvf test.tar	
+tar -xvf test.tar
+
+
+ssh
+
+
+
+free (permit)
+top (permit)
+
+
